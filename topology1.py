@@ -13,7 +13,7 @@ class SingleSwitchTopo( Topo ):
 
 		#add switches, hosts and links
 		switch = self.addSwitch('s1')
-		for i in range(3):
+		for i in range(4):
 			host = self.addHost('h%s' % (i+1))
 			self.addLink(host,switch,bw=100)
 
